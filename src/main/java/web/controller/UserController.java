@@ -47,10 +47,4 @@ public class UserController {
         userService.updateUser(user,id);
         return "redirect:/";
     }
-/*    @RequestMapping(value = "/{id}/edit",method = {RequestMethod.GET, RequestMethod.PATCH})
-    public String update(@ModelAttribute("user") User user, @PathVariable("id") int id, Model model) {
-        model.addAttribute("user",userService.getUserById(id));
-        userService.updateUser(user, id);
-        return "edit";
-    }*/
 }
